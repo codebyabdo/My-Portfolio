@@ -3,32 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Abdelrahman Adel | Front-End Engineer</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Awesome 6 (free) -->
 
-    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    
     <link rel="stylesheet" href="css/Portfolio.css" />
   </head>
-
   <body>
-    <!-- ================= HEADER ================= -->
-
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <a href="#" class="logo">codebyabdo</a>
-
         <nav class="nav">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -38,87 +33,82 @@
       </div>
     </header>
 
-    <!-- ================= HERO ================= -->
-
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-content">
-          <span class="hero-small">Front-End Engineer</span>
-
+          <div class="hero-small">
+            <i class="fa-regular fa-star"></i> Front-End Engineer
+          </div>
           <h1>
             Hi, I'm <br />
             Abdelrahman Adel.
           </h1>
-
           <h2>
             I build modern, scalable, and high-performance web applications.
           </h2>
-
           <p>
             Front-End Developer specialized in React.js, Next.js, TypeScript,
-            and modern UI architecture. Passionate about building SaaS
-            platforms, dashboards, and responsive user experiences.
+            and modern UI architecture. Passionate about crafting SaaS
+            platforms, dashboards, and smooth user experiences.
           </p>
-
           <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-
+            <a href="#projects" class="btn btn-primary">✨ View Projects</a>
             <a
               href="https://github.com/codebyabdo"
               target="_blank"
               class="btn btn-outline"
+              ><i class="fab fa-github"></i> GitHub</a
             >
-              GitHub
-            </a>
           </div>
-
           <div class="socials">
-            <a href="https://github.com/codebyabdo" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/codebyabdo" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a href="https://x.com/codebyabdo" target="_blank">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-
-            <a href="mailto:badl98970@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
+            <a
+              href="https://github.com/codebyabdo"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/codebyabdo"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://x.com/codebyabdo"
+              target="_blank"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="mailto:badl98970@gmail.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
           </div>
         </div>
-
         <div class="hero-image">
-          <img src="images/profile.png" alt="Abdelrahman Adel" />
+          <img src="/images/profile.png" alt="Abdelrahman Adel" />
         </div>
       </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
-
-    <section class="section" id="about">
+    <!-- About -->
+    <section class="section reveal" id="about">
       <div class="container">
         <div class="section-title">
           <span>About Me</span>
           <h2>Who I Am</h2>
         </div>
-
         <div class="about-content">
           <p>
             I'm a Front-End Engineer from Egypt with experience building modern
             SaaS platforms, dashboards, e-commerce systems, and scalable web
             applications.
           </p>
-
           <p>
             I focus on clean architecture, responsive design, performance
             optimization, and creating smooth user experiences using modern
             technologies like React.js, Next.js, TypeScript, and Tailwind CSS.
           </p>
-
           <p>
             I also have experience collaborating with back-end developers,
             integrating APIs, and working with production-ready workflows using
@@ -128,127 +118,114 @@
       </div>
     </section>
 
-    <!-- ================= SKILLS ================= -->
-
-    <section class="section skills-section" id="skills">
+    <!-- Skills -->
+    <section class="section skills-section reveal" id="skills">
       <div class="container">
         <div class="section-title">
           <span>Skills</span>
           <h2>Tech Stack</h2>
         </div>
-
         <div class="skills-grid">
-          <div class="skill-card">React.js</div>
-          <div class="skill-card">Next.js</div>
-          <div class="skill-card">TypeScript</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">Tailwind CSS</div>
-          <div class="skill-card">Redux Toolkit</div>
-          <div class="skill-card">React Query</div>
-          <div class="skill-card">REST APIs</div>
-          <div class="skill-card">Formik & Yup</div>
-          <div class="skill-card">React Router</div>
-          <div class="skill-card">Git & GitHub</div>
-          <div class="skill-card">Vercel</div>
+          <div class="skill-card"><i class="fab fa-react"></i> React.js</div>
+          <div class="skill-card"><i class="fab fa-js"></i> Next.js</div>
+          <div class="skill-card">
+            <i class="fa-brands fa-typescript"></i> TypeScript
+          </div>
+          <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt"></i> Tailwind CSS
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-store"></i> Redux Toolkit
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database"></i> React Query
+          </div>
+          <div class="skill-card"><i class="fas fa-cloud"></i> REST APIs</div>
+          <div class="skill-card">
+            <i class="fas fa-check-circle"></i> Formik & Yup
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code-branch"></i> Git & GitHub
+          </div>
+          <div class="skill-card"><i class="fas fa-server"></i> Vercel</div>
         </div>
       </div>
     </section>
 
-    <!-- ================= PROJECTS ================= -->
-
-    <section class="section" id="projects">
+    <!-- Projects -->
+    <section class="section reveal" id="projects">
       <div class="container">
         <div class="section-title">
           <span>Projects</span>
           <h2>Featured Work</h2>
         </div>
-
         <div class="projects-grid">
           <!-- Project 1 -->
-
           <div class="project-card">
-            <img src="images/vorder.png" alt="Vorder Project" />
-
+            <img src="/images/vorder.png" alt="Vorder Project" />
             <div class="project-content">
               <h3>Vorder SaaS Platform</h3>
-
               <p>
                 Multi-tenant SaaS e-commerce platform allowing merchants to
                 create and manage online stores with customizable templates and
                 admin dashboards.
               </p>
-
               <div class="tech">
-                <span>React</span>
-                <span>Tailwind</span>
-                <span>React Query</span>
-                <span>PostgreSQL</span>
+                <span>React</span><span>Tailwind</span><span>React Query</span
+                ><span>PostgreSQL</span>
               </div>
-
               <div class="project-links">
-
-                <a href="https://vorder-sigma.vercel.app" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                <a
+                  href="https://vorder-sigma.vercel.app"
+                  target="_blank"
+                  aria-label="Live Demo"
+                  ><i class="fas fa-arrow-up-right-from-square"></i
+                ></a>
               </div>
             </div>
           </div>
-
           <!-- Project 2 -->
-
           <div class="project-card">
-            <img src="images/accounting.png" alt="Accounting System" />
-
+            <img src="/images/accounting.png" alt="Accounting System" />
             <div class="project-content">
               <h3>Accounting System</h3>
-
               <p>
                 Full accounting and inventory management system for clothing
                 stores with invoices, analytics, stock management, and
                 multilingual support.
               </p>
-
               <div class="tech">
-                <span>React 19</span>
-                <span>TypeScript</span>
-                <span>Tailwind</span>
-                <span>Express</span>
+                <span>React 19</span><span>TypeScript</span><span>Tailwind</span
+                ><span>Express</span>
               </div>
-
               <div class="project-links">
-
-                <a href="https://accounting-system-one.vercel.app/" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                <a
+                  href="https://accounting-system-one.vercel.app"
+                  target="_blank"
+                  aria-label="Live Demo"
+                  ><i class="fas fa-arrow-up-right-from-square"></i
+                ></a>
               </div>
             </div>
           </div>
-
           <!-- Project 3 -->
-
           <div class="project-card">
-            <img src="images/xcode.png" alt="X Code Website" />
-
+            <img src="/images/xcode.png" alt="X Code Website" />
             <div class="project-content">
               <h3>X Code Company Website</h3>
-
               <p>
                 Responsive multi-page software company website with reusable
                 components, accessibility improvements, and SEO optimization.
               </p>
-
               <div class="tech">
-                <span>React</span>
-                <span>Vite</span>
-                <span>Tailwind</span>
-                <span>React Router</span>
+                <span>React</span><span>Vite</span><span>Tailwind</span
+                ><span>React Router</span>
               </div>
-
               <div class="project-links">
-
-                <a href="https://x-code-prtfolio.vercel.app/" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                <a href="https://x-code-prtfolio.vercel.app" target="_blank"
+                  ><i class="fas fa-arrow-up-right-from-square"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -256,30 +233,68 @@
       </div>
     </section>
 
-    <!-- ================= CONTACT ================= -->
-
-    <section class="section contact-section" id="contact">
+    <!-- Contact -->
+    <section class="section contact-section reveal" id="contact">
       <div class="container">
         <div class="section-title center">
           <span>Contact</span>
           <h2>Let's Work Together</h2>
         </div>
-
         <p class="contact-text">
           I'm currently available for freelance work, internships, and front-end
           engineering opportunities.
         </p>
-
-        <a href="mailto:abdelrahman.adel.js@gmail.com" class="contact-btn"> Say Hello </a>
+        <a href="mailto:abdelrahman.adel.js@gmail.com" class="contact-btn"
+          ><i class="fas fa-paper-plane"></i> Say Hello</a
+        >
       </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
-
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>Designed & Built by Abdelrahman Adel</p>
+        <p>Designed & Built by Abdelrahman Adel — 2025</p>
       </div>
     </footer>
+
+    <script>
+      (function () {
+        // scroll reveal with intersection observer
+        const revealElements = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // once visible, stop observing
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -20px 0px" },
+        );
+        revealElements.forEach((el) => observer.observe(el));
+
+        // header background enhance on scroll
+        const header = document.querySelector(".header");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 50) {
+            header.style.background = "rgba(15, 23, 42, 0.95)";
+            header.style.backdropFilter = "blur(18px)";
+          } else {
+            header.style.background = "rgba(15, 23, 42, 0.85)";
+            header.style.backdropFilter = "blur(14px)";
+          }
+        });
+
+        // optional: add hover glint effect (just for vibe)
+        const btns = document.querySelectorAll(".btn-primary, .contact-btn");
+        btns.forEach((btn) => {
+          btn.addEventListener("mouseenter", (e) => {
+            e.target.style.transition = "transform 0.2s ease, box-shadow 0.2s";
+          });
+        });
+      })();
+    </script>
+
   </body>
 </html>
